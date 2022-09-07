@@ -29,7 +29,7 @@ namespace OOP2
 
         public int NoOfTerms { get; set; }
 
-        public int Holidays { get; set; }
+        public int Holidays { get; set; } ;
     }
 
     class HighSchool : School
@@ -39,6 +39,8 @@ namespace OOP2
 
             return 7;
         }
+
+        public int Holidays { get; set; } = 20;
     }
 
     class College : School
@@ -52,6 +54,8 @@ namespace OOP2
         {
             HighSchool mySchool = new HighSchool();
             mySchool.SchoolName = "FUOYE";
+            
+            int holidaysPerYear = mySchool.Holidays;
         } 
     }
 }
